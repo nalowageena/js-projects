@@ -1,4 +1,4 @@
-// genteral parameters
+// general parameters
 const counter = document.getElementById('numberCount');
 
 const decrease = document.getElementById('decrease');

@@ -10,6 +10,8 @@ body{
 }
 .container{
     background-color: ivory;
+    /* changed the padding */
+    padding: 20%;
 }
 ul li {
     list-style-type: none;
