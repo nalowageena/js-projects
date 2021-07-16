@@ -1,0 +1,71 @@
+.nav-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: ivory;
+  box-shadow: 0 5px rgb(248, 248, 208);
+  padding-bottom: 0px;
+  /* background-size: 1%; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav-links {
+  display: flex;
+  text-align: right;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+}
+.nav-links .nav-links li a :hover {
+  color: greenyellow;
+}
+.nav-links li {
+  list-style: none;
+  padding: 2% 20%;
+  display: inline-block;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  background-position: center;
+  background-color: bisque;
+  /* top: 50%; */
+  /* width: 100vw; */
+  padding-top: 2%;
+  padding-bottom: 2%;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  text-align: center;
+  border-radius: 5%;
+}
+.container h2 {
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.color {
+  text-transform: capitalize;
+}
+#btn {
+  display: inline-block;
+  position: relative;
+  transform: translate(50%, 50%);
+  text-decoration: none;
+  color: #000000;
+  padding: 12px 34px;
+  border: 1px solid #000000;
+  font-size: 13px;
+  background: transparent;
+  cursor: pointer;
+}
+#btn :hover {
+  border: 1px solid gold;
+  background: gold;
+  transition: 1s;
+}
+body {
+  background-color: #f1f5f8;
+  margin: 0px;
+}

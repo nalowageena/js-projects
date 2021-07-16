@@ -1,0 +1,17 @@
+*{
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+}
+
+body{
+    font-family: monospace;
+    background-color: gray;
+}
+.container{
+    background-color: ivory;
+}
+ul li {
+    list-style-type: none;
+    cursor: pointer;
+}
