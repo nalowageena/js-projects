@@ -1,11 +1,34 @@
 // general parameters
 const counter = document.getElementById('numberCount');
 
-const decrease = document.getElementById('decrease');
+/*const decrease = document.getElementById('decrease');
 const reset = document.getElementById('reset');
-const increase = document.getElementById('increase');
+const increase = document.getElementById('increase');*/
 
-//adding event listeners
+let countNumber = counter.textContent;
+
+const btns = document.querySelectorAll('.btn');
+// for each button, i want to perform a particular action
+btns.forEach(function (btn) {
+  btn.addEventListener('click', function event(e) {
+    const style = e.currentTarget.classList;
+    // what exactly does this classList do... i don't get
+    if (style.contains('decrease')) {
+      countNumber--;
+    }
+    if (style.contains('increase')) {
+      countNumber++;
+    }
+    if (style.contains('reset')) {
+      countNumber = 0;
+    }
+    checkingSign(countNumber);
+
+    counter.textContent = countNumber;
+  });
+});
+
+/*//adding event listeners
 decrease.addEventListener('click', onClickDecrease);
 reset.addEventListener('click', onClickReset);
 increase.addEventListener('click', onClickIncrease);
@@ -27,7 +50,7 @@ function onClickReset() {
   countNumber = 0;
   checkingSign(countNumber);
   counter.textContent = String(countNumber);
-}
+}*/
 
 // if counter.textContent is negative, it should be red
 // if it is positive, then it should be green
@@ -40,4 +63,7 @@ function checkingSign(num) {
   } else {
     counter.style.color = 'black';
   }
+
+  // this method is less cumbersome than what i proposed originally
+  // it is easy and less functions are created
 }
