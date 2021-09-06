@@ -1,17 +1,43 @@
-*{
-box-sizing: border-box;
-margin: 0px;
-padding: 0px;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    font-family: monospace;
-    background-color: gray;
+body {
+  font-family: monospace;
+  background-color: white;
 }
-.container{
-    background-color: ivory;
+.container {
+  background-color: ivory;
+  max-width: 70%;
+  max-height: 70%;
+  padding: 30px;
+  border: 2px solid black;
+  margin-top: 15%;
 }
-ul li {
-    list-style-type: none;
-    cursor: pointer;
+/* ul li {
+  list-style-type: none;
+  cursor: pointer;
+} */
+#numberCount {
+  font-size: 50px;
+}
+
+.btn {
+  padding: 20px 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  background: transparent;
+  background-color: skyblue;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* still do not understand why on hover doesn't work */
+.btn :hover {
+  background-color: black;
+  color: white;
 }
